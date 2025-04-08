@@ -38,6 +38,7 @@ jobs:
       - name: Test with Wokwi
         uses: wokwi/wokwi-ci-action@v1
         with:
-          token: ${{ secrets.wok_0cHECGfVtwtb9378i8ZwZh2qlIuSm0Ey88045529 }}
+          WOKWI_CLI_TOKEN: wok_0cHECGfVtwtb9378i8ZwZh2qlIuSm0Ey88045529
+          token: ${{ secrets.WOKWI_CLI_TOKEN }}
           path: / # directory with wokwi.toml, relative to repo's root
           expect_text: 'Hello, world!' # optional
